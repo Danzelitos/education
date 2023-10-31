@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.fullList {
+  height: 50vh;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  max-width: 1490px;
+  text-align: center;
+  margin: 0 auto;
+
+}
+.inputButton{
+  margin-top: 10vh;
+}
+.inputButton input {
+  width: 20rem;
+  height: 2.9rem;
+  border: none;
+  margin-top: 1rem;
+  background-color: blanchedalmond;
+  border: 1px;
+  border-radius: 5px;
+}
+.inputButton button {
+  width: 8rem;
+  height: 3rem;
+  background-color: rgb(120, 120, 217);
+  border-radius: 5px;
+}
+
+.inputButton button:hover {
+  background-color: rgb(69, 69, 139);
+}
+.list {
+  margin: 3rem auto;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+li {
+  text-align: left;
+}
+.active {
+  text-decoration: none;
+  color: black;
+}
+.red {
+  background-color: red;
+}

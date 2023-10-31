@@ -1,0 +1,82 @@
+.container {
+  display: flex ;
+  margin: .5rem 1rem;
+}
+.showName{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+}
+.choiceVariants{
+  width: 40%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.send__comment {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  height: 50vh;
+  justify-content: space-between;
+}
+.send__comment h2{
+  font-size: 1.5rem;
+  color: rgb(17, 103, 96);
+}
+label {
+  font-size: 1.1rem;
+}
+
+input {
+  width: 50%;
+  height: 2rem;
+  border: 2px dotted rgb(119, 119, 224);
+}
+#comment {
+  height: 6rem;
+}
+#clickButton {
+  background-color: rgb(76, 76, 201);
+  width: 35%;
+  height: 8%;
+  border: 1px solid blue;
+  border-radius: 5px;
+  color: white;
+}
+.imgnDate{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.chat {
+  width: 60%;
+  height: 60vh;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+}
+.addComment {
+  margin: 1rem 0;
+}
+.chat h2 {
+  font-size: 1.5rem;
+  color: rgb(17, 103, 96);
+}
+.this__comment {
+  margin-top: 2rem;
+}
+#parag {
+  font-size: 1.2rem;
+  color: rgb(17, 103, 96);
+}
+#span {
+  font-size: 1.2rem;
+  font-style: italic;
+}
+#setImages {
+  width: 50px;
+  height: 50px;
+}
+
