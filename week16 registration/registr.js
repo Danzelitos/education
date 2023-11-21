@@ -86,4 +86,19 @@ form.onsubmit = function(){
   } else {
     labelbox.style.color = 'black';
   };
-}
+};
+
+const inputName = form.elements.firstName;
+const nameError = document.querySelector('.nameError')
+
+inputName.addEventListener('input', function(event){
+	console.log(event.target.validity.missMatch);
+	if (!inputName.validity.valid){
+		inputName.classList.add("error");
+		nameError.textContent = inputName.validationMessage;
+	} else{
+		inputName.classList.remove("error");
+		nameError.textContent = '';
+	}
+});
+

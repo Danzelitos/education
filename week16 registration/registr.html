@@ -10,10 +10,11 @@
     <div class="container">
       <form action="#" name="formOne" class="formOne" novalidate>
         <label for="firstName">Имя:</label>
-        <input type="text" class="input js-input" name="firstName" placeholder=" Введите свое имя"/><br />
+        <input type="email" class="input js-input" name="firstName" placeholder=" Введите свое имя" pattern="^\S+@\S+\.\S+$" minlength="2" maxlength="20" required/><br />
+				<span class="nameError"></span>
 
         <label for="email">Email:</label>
-        <input type="email" class="input js-input email" name="firstEmail" placeholder=" Введите ваш email" required/> <br>
+        <input type="email" class="input js-input email" name="firstEmail" placeholder=" Введите ваш email" pattern="/^[A-Z0-9._%+-]+@[A-Z0-9-]+.+.[A-Z]{2,4}$/i" required/> <br>
 
         <label for="age">Возраст:</label>
         <input type="number" class="input js-input" name="ageInput" placeholder=" 0" required/> <br>
