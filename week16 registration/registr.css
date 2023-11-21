@@ -1,0 +1,23 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+.formOne{
+	background-color: beige;
+	height: 65%;
+	width: 30%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.error{
+	color: red;
+	border-color: red;
+}

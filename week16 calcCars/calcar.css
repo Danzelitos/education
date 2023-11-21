@@ -1,0 +1,39 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.main{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+.formCars{
+	width: 80%;
+	display: flex;
+	flex-flow: row wrap;
+	background-color: rgb(159, 192, 221);
+	border-radius: 10px;
+}
+.card{
+	padding: 0.2rem 1rem;
+	margin: 1rem 0.5rem;
+	width: 30%;
+	height: 7rem;
+	border-radius: 10px;
+	background-color: rgb(168, 168, 230);
+}
+select{
+	width: 10rem;
+}
+.submit{
+	width: 10rem;
+	height: 3rem;
+	border-radius: 10px;
+	background-color: rgb(110, 212, 97);
+	border: 0px solid;
+	margin: 1rem;
+	color: white;
+	font-weight: 700;
+}
