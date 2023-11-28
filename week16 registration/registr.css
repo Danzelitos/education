@@ -11,13 +11,17 @@
 }
 .formOne{
 	background-color: beige;
-	height: 65%;
 	width: 30%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	padding: 1rem;
 }
 .error{
+	color: red;
+	border-color: red;
+}
+.error-message{
 	color: red;
 	border-color: red;
 }
