@@ -9,48 +9,73 @@
   <body>
     <div class="container">
       <form action="#" name="formOne" class="formOne" novalidate>
-        <label for="firstName">Имя:</label>
-        <input type="text" class="input js-input" name="firstName" placeholder=" Введите свое имя" minlength="2" maxlength="20" required/><br />
-				<span class="nameError"></span>
+        <div class="nameBlock">
+					<label for="firstName">Имя:</label> 
+        	<input type="text" class="input js-input" name="firstName" placeholder=" Введите свое имя" minlength="2" maxlength="20" required/>
+					<span class="nameError"></span>
+				</div>
 
-        <label for="email">Email:</label>
-        <input type="email" class="input js-input email" name="firstEmail" placeholder=" Введите ваш email" pattern="/^[A-Z0-9._%+-]+@[A-Z0-9-]+.+.[A-Z]{2,4}$/i" required/> <br>
-				<span class="emailError"></span>
+        <div class="emailBlock">
+					<label for="email">Email:</label> 
+        	<input type="email" class="input js-input email" name="firstEmail" placeholder=" Введите ваш email" pattern="/^[A-Z0-9._%+-]+@[A-Z0-9-]+.+.[A-Z]{2,4}$/i" required/> 
+					<span class="emailError"></span>
+				</div>
 
-        <label for="age">Возраст:</label>
-        <input type="number" class="input js-input age" name="ageInput" placeholder=" 0" min="1" max="100" required/> <br>
-				<span class="ageError"></span>
+        <div class="ageBlock">
+					<label for="age">Возраст:</label> 
+        	<input type="number" class="input js-input age" name="ageInput" placeholder=" 0" min="1" max="100" required/> 
+					<span class="ageError"></span>
+			</div>
 
-        <div class="radios">
-          <label for="chooseSex">Выберите пол:</label> <br>
-          <input type="radio" class="input js-input js-input-radio" name="sex" id="checkMan" value="man"> <span>Мужчина</span>
-          <input type="radio" class="input js-input js-input-radio" name="sex" id="checkWoman" value="woman"> <span>Женщина</span>
-        </div>
+        <!-- <div class="radios">
+          <div class="js-input-radio"><label for="chooseSex" >Выберите пол:</label> </div>
+          <div class="js-input-radio"><input type="radio" name="sex" id="checkMan" value="man"> <span>Мужчина</span></div>
+          <div class="js-input-radio"><input type="radio" name="sex" id="checkWoman" value="woman"> <span>Женщина</span></div>
+        </div> -->
+				<div class="radios">
+					<div class="js-input-radio-label">
+						<label for="chooseSex" >Выберите пол:</label> 
+					</div>
+					<div class="js-input-radio">
+						<input type="radio" name="sex" id="checkMan" value="man">
+						<span>Мужчина</span>
+					<!-- </div>
+					<div class="js-input-radio"> -->
+						<input type="radio" name="sex" id="checkWoman" value="woman">
+						<span>Женщина</span>
+					</div>
+				</div>
 				<span class="sexError"></span>
 
-        <label for="selectProfession">Выберите профессию:</label>
-        <select name="selectProfession" id="" placeholder="choose" required>
-          <option value="doctor">Врач</option>
-          <option value="dev">Программист</option>
-          <option value="teach">Учитель</option>
-          <option value="design">Дизайнер</option>
-          <option value="engineer">Инженер</option>
-          <option value="seller">Продавец</option>
-          <option value="another">Другое...</option>
-        </select> <br>
+        <div class="selectionBlock">
+					<label for="selectProfession">Выберите профессию:</label> 
+        	<select name="selectProfession" id="" class="selection" placeholder="choose" required>
+						<option value="doctor">Врач</option>
+						<option value="dev">Программист</option>
+						<option value="teach">Учитель</option>
+						<option value="design">Дизайнер</option>
+						<option value="engineer">Инженер</option>
+						<option value="seller">Продавец</option>
+						<option value="another">Другое...</option>
+        </select> 
+			</div> 
 
-        <label for="password">Пароль:</label> 
-        <input type="password" name="password" class="input js-input js-input-pass" placeholder=" Введите пароль" minlength="8" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()])[A-Za-z\d!@#$%^&*()]{8,20}$" required/>  <br>
-        <span class="passError"></span>
+        <div class="passBlock">
+					<label for="password">Пароль:</label>  
+        	<input type="password" name="password" class="input js-input js-input-pass" placeholder=" Введите пароль" minlength="8" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()])[A-Za-z\d!@#$%^&*()]{8,20}$" required/>
+        	<span class="passError"></span>
+			</div>
 
-        <label for="password">Повторите пароль:</label>
-        <input type="password" name="password" class="input js-input js-input-rePass" placeholder=" Введите пароль" minlength="8" pattern="/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()])[A-Za-z\d!@#$%^&*()]{8,20}$/" required/>  <br>
-        <span class="repassError"></span>
+        <div class="repassBlock">
+					<label for="password">Повторите пароль:</label> 
+					<input type="password" name="password" class="input js-input js-input-rePass" placeholder=" Введите пароль" minlength="8" pattern="/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()])[A-Za-z\d!@#$%^&*()]{8,20}$/" required/>
+					<span class="repassError"></span>
+			</div>
 
         <div class="boxBlock">
-          <input type="checkbox" class="input js-input js-input-checkBox" name="checkAgree" id="box" required> 
-          <label class="labelBox" for="checkbox">Нажимая кнопку "отправить" вы даете согласие на обработку своих персональных данных.</label>
-        </div> <br>
+          <input type="checkbox" class="input js-input-checkBox" name="checkAgree" id="box" required> 
+          <label class="labelBox" for="checkbox">Нажимая кнопку "отправить" вы даете согласие на обработку своих персональных данных.</label> 
+        </div> 
 
           <button type="submit" class="submitButton">Отправить</button>
           <span class="error-message"></span>
