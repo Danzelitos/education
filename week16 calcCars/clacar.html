@@ -12,6 +12,7 @@
 			<div class="card marks__car">
 				<label for="">Выберите марку автомобиля:</label> <br />
 				<select name="marksCar" id="marks">
+					<option value="First" disabled selected>Choose a mark:</option>
 					<option value="Reno">Reno</option>
 					<option value="Opel">Opel</option>
 					<option value="Mazda">Mazda</option>
@@ -20,7 +21,7 @@
 			</div>
 			<div class="card model__cars">
 				<label for="">Выберите модель автомобиля:</label> <br />
-				<select name="" id="mdels" disabled></select>
+				<select name="" id="models" disabled></select>
 				<!-- reno: Kaptur, Duster, Logan, Sandero/
 				Opel: Astra, Corsa, Mokka, Antara/
 			Mazda: MX-5, CX-9, CX-7, Mazda 3/
@@ -28,24 +29,25 @@
 			</div>
 			<div class="card toplivo">
 				<label for="">Выберите вид топлива:</label> <br />
-				<input type="checkbox" name="" id=""> Бензин <br />
-				<input type="checkbox" name="" id=""> Дизель <br />
-				<input type="checkbox" name="" id=""> Газ <br />
-				<input type="checkbox" name="" id=""> Электричество <br />
+				<input type="radio" name="fuel" id="" value="gasoline"> Бензин <br />
+				<input type="radio" name="fuel" id="" value="dizel"> Дизель <br />
+				<input type="radio" name="fuel" id="" value="gas"> Газ <br />
+				<input type="radio" name="fuel" id="" value="electricity"> Электричество <br />
 			</div>
 			<div class="card valueDvigatel">
-				<label for="">Объем двигателя:</label> <br />
-				<input type="range" name="" id="">
+				<label for="range">Объем двигателя:</label> <br />
+				<input type="range" name="range1" id="range1" min="1.1" max="3.5" step="0.1"> <br>
+				<output for="range1" id="valueOutput"></output>
 			</div>
 			<div class="card Sostoyanie">
 				<label for="">Выберите состояние автомобиля:</label> <br />
-				<input type="radio" name="" id=""> Новый
-				<input type="radio" name="" id=""> Подержанный
+				<input type="radio" name="vehicleStatus" id="newCar" value="newCar"> Новый <br>
+				<input type="radio" name="vehicleStatus" id="oldCar" value="oldCar"> Подержанный
 			</div>
 			<div class="card personsCar">
 				<label for="">Количество владельцев:</label> <br />
-				<input type="radio" name="" id=""> 1-2 владельца
-				<input type="radio" name="" id=""> более 3-х владельцев
+				<input type="radio" name="owners" id="solo" value="1-2 owners"> 1-2 владельца <br>
+				<input type="radio" name="owners" id="moreThree" value="3 more"> более 3-х владельцев
 			</div>
 			<div class="card payment">
 				<label for="">Выберите способ оплаты:</label> <br />
@@ -53,7 +55,12 @@
 				<input type="radio" name="" id=""> Наличными <br />
 				<input type="radio" name="" id=""> Счет на юридическое лицо <br />
 			</div>
-			<button  class="submit" type="submit">Рассчитать стоимость</button>
+			<div class="card button">
+				<button  class="submit" type="submit">Рассчитать стоимость</button>
+			</div>
+			<div class="total__price">
+				<span class="price"></span>
+			</div>
 		</form>
 	</section>
 	<script src="calcar.js"></script>

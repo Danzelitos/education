@@ -27,6 +27,11 @@
 select{
 	width: 10rem;
 }
+.button{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 .submit{
 	width: 10rem;
 	height: 3rem;
