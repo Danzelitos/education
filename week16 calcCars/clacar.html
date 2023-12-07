@@ -47,7 +47,8 @@
 			<div class="card personsCar">
 				<label for="">Количество владельцев:</label> <br />
 				<input type="radio" name="owners" id="solo" value="1-2 owners"> 1-2 владельца <br>
-				<input type="radio" name="owners" id="moreThree" value="3 more"> более 3-х владельцев
+				<input type="radio" name="owners" id="moreThree" value="3 more"> более 3-х владельцев <br>
+				<span class="ownersError"></span>
 			</div>
 			<div class="card payment">
 				<label for="">Выберите способ оплаты:</label> <br />
@@ -58,7 +59,7 @@
 			<div class="card button">
 				<button  class="submit" type="submit">Рассчитать стоимость</button>
 			</div>
-			<div class="total__price">
+			<div class="card total__price">
 				<span class="price"></span>
 			</div>
 		</form>
