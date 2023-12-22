@@ -11,7 +11,7 @@
 		<form action="#" class="formCars">
 			<div class="card marks__car">
 				<label for="">Выберите марку автомобиля:</label> <br />
-				<select name="marksCar" id="marks">
+				<select name="marksCar" id="marks" required>
 					<option value="First" disabled selected>Choose a mark:</option>
 					<option value="Reno">Reno</option>
 					<option value="Opel">Opel</option>
@@ -22,6 +22,7 @@
 			<div class="card model__cars">
 				<label for="">Выберите модель автомобиля:</label> <br />
 				<select name="" id="models" disabled></select>
+				<!-- <option value="1100000"></option> -->
 				<!-- reno: Kaptur, Duster, Logan, Sandero/
 				Opel: Astra, Corsa, Mokka, Antara/
 			Mazda: MX-5, CX-9, CX-7, Mazda 3/
@@ -29,7 +30,7 @@
 			</div>
 			<div class="card toplivo">
 				<label for="">Выберите вид топлива:</label> <br />
-				<input type="radio" name="fuel" id="" value="gasoline"> Бензин <br />
+				<input type="radio" name="fuel" id="" value="gasoline" checked> Бензин <br />
 				<input type="radio" name="fuel" id="" value="dizel"> Дизель <br />
 				<input type="radio" name="fuel" id="" value="gas"> Газ <br />
 				<input type="radio" name="fuel" id="" value="electricity"> Электричество <br />
@@ -41,20 +42,20 @@
 			</div>
 			<div class="card Sostoyanie">
 				<label for="">Выберите состояние автомобиля:</label> <br />
-				<input type="radio" name="vehicleStatus" id="newCar" value="newCar"> Новый <br>
+				<input type="radio" name="vehicleStatus" id="newCar" value="newCar" checked> Новый <br>
 				<input type="radio" name="vehicleStatus" id="oldCar" value="oldCar"> Подержанный
 			</div>
 			<div class="card personsCar">
 				<label for="">Количество владельцев:</label> <br />
-				<input type="radio" name="owners" id="solo" value="1-2 owners"> 1-2 владельца <br>
+				<input type="radio" name="owners" id="solo" value="1-2 owners" checked> 1-2 владельца <br>
 				<input type="radio" name="owners" id="moreThree" value="3 more"> более 3-х владельцев <br>
 				<span class="ownersError"></span>
 			</div>
-			<div class="card payment">
+			<div class="card paymentMethod">
 				<label for="">Выберите способ оплаты:</label> <br />
-				<input type="radio" name="" id=""> Картой  <br />
-				<input type="radio" name="" id=""> Наличными <br />
-				<input type="radio" name="" id=""> Счет на юридическое лицо <br />
+				<input type="radio" name="payment" value="Картой" id="" checked> Картой  <br />
+				<input type="radio" name="payment" value="Наличными" id=""> Наличными <br />
+				<input type="radio" name="payment" value="Счет на юридическое лицо" id=""> Счет на юридическое лицо <br />
 			</div>
 			<div class="card button">
 				<button  class="submit" type="submit">Рассчитать стоимость</button>
@@ -64,6 +65,7 @@
 			</div>
 		</form>
 	</section>
-	<script src="calcar.js"></script>
+	<!-- <script src="calcar.js"></script> -->
+	<script src="newcalc.js"></script>
 </body>
 </html>
