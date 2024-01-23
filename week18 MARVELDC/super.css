@@ -1,0 +1,110 @@
+/* @import url(https://myfonts.ru/myfonts?fonts=mp-manga); */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	overflow-x: hidden;
+}
+.container{
+	max-width: 1900px;
+	width: 100vw;
+	display: flex;
+	padding: 1rem;
+}
+.list{
+	max-width: 1900px;
+  width: 100%;
+  margin: 2rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+	list-style-type: none;
+	gap: 3rem;	
+	font-family: 'MP Manga', arial;
+}
+.header{
+	display: flex;
+}
+.click{
+	width: 50px;
+	height: 50px;
+	position: relative;
+
+}
+.mainImg{
+	margin-top: 1rem;
+	width: 90%;
+}
+.card{
+	width: 30%;
+	height: 35rem;
+	border: 1px solid black;
+	outline: 1px solid black;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+p {
+	text-align: center;
+	font-family: 'MP Manga', arial;
+	margin-top: 3px;
+}
+.rating-box {
+	display: flex;
+	width: 10rem;
+	height: 3rem;
+	justify-content: center;
+	align-items: center;
+}
+.stars i{
+	color: rgb(230, 230, 230);
+	font-size: 1.3rem;
+	cursor: pointer;
+}
+.active{
+	color: yellow;
+}
+.tooltip-toggle{
+	border: none;
+  background-color: #ffffff;
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+.tooltip-toggle:hover .click {
+  color:#68a2ca;
+}
+.tooltip-text {
+  font-family: "PT Sans", sans-serif; 
+  background-color: #333333; 
+  color: #ffffff;
+  font-size: 12px; 
+  line-height: 20px; 
+  font-weight: 400;
+  text-transform: none; 
+  padding: 10px 18px 18px 22px; 
+  border-radius: 10px; 
+  width: 256px; 
+  position: relative; 
+  bottom: 100%; 
+  left: -50%;
+  z-index: 1; 
+  transform: translateX(-50%); 
+  display: none; 
+}
+.tooltip {
+	position: absolute;
+	margin-top: 23px;
+	margin-left: 180px;
+	width: 25px;
+	height: 25px;
+}
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text {
+  display: block;
+}
