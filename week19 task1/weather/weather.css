@@ -1,0 +1,28 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: white;
+}
+main{
+	width: 100vw;
+	height: 100vh;
+	background-image: url('https://catherineasquithgallery.com/uploads/posts/2023-01/1674324151_catherineasquithgallery-com-p-fon-serie-oblaka-foto-180.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	/* margin: 0 auto; */
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.diver{
+	width: 80%;
+}

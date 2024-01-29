@@ -1,0 +1,23 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.diver{
+	width: 80%;
+	border-bottom: 1px solid black;
+}
+article{
+	margin-bottom: 1rem;
+	width: 70%;
+}
+h2{
+	color: red;
+	width: 50%;
+}
